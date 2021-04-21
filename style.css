@@ -1,0 +1,461 @@
+/* // GLOBAL // */
+html {
+    scroll-behavior: smooth;
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --txt-color:##262626;
+    --bck-color:white;
+    color: var(--txt-color);
+    background-color: var(--bck-color);
+}
+a {
+    color: inherit;
+    text-decoration: none;}
+p{
+    max-width: 48rem;
+    hyphens:none ;
+}
+body {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+.overlay{
+    opacity: 0.7;
+}
+.border{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    border: 2px solid;
+}
+.lienp{
+    text-decoration: underline;
+}
+a:not(.non):hover,
+a:not(.non)>p:hover,
+a:not(.non):hover,
+.active:hover{
+    background-color: rgba(255, 150, 0, 0.7);
+    opacity: 0.9;
+    cursor: pointer;
+}
+.click:hover{
+    background-color: rgba(255, 150, 0, 0.7);
+    opacity: 0.8;
+}
+
+h5{
+    font-size:1.25rem;
+    margin-bottom: 0;
+}
+
+/* // PAGE INDEX // */
+/* HEADER */
+header{
+    padding-top: 1rem;
+}
+/* Haut */ 
+h3{
+    font-size: 1.75rem;
+    font-weight: 100; 
+    margin-bottom: 2rem;
+}
+.projetsencours h2{
+    margin-bottom: 3rem;
+}
+.signe{
+    font-size: 3rem;
+    font-weight: 800; 
+}
+h1{
+    font-size: 2.25rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+h2{
+    font-size: 1.75rem;
+    line-height: 0.8rem;
+    font-weight:200;
+}
+.container h2{
+    color:#959595 ;
+}
+/* Nav */
+nav{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-top: 0.5px solid rgb(149, 149, 149, 0.3);
+    border-bottom: 0.5px solid rgb(149, 149, 149, 0.3);
+    justify-content: space-between;
+    display: flex;
+}
+/*.lignebas::after {
+    content: ".........................................................................................................................";
+    font-size: 1rem;
+    font-family: monospace;
+    font-size: 1rem;
+    display: inline-block;
+    max-width: 960px;
+    overflow-x: hidden;
+    margin-top: 4rem;
+    margin-bottom: -1.8rem;
+}
+header:not(.non)::after {
+    content: ".........................................................................................................................";
+    font-size: 1rem;
+    font-family: monospace;
+    font-size: 1rem;
+    display: inline-block;
+    max-width: 960px;
+    overflow-x: hidden;
+    margin-top: -5rem;
+}*/
+
+/***nav***/
+.ligne li{
+    display: inline-block;
+    padding-right: 3rem;
+}
+.ligne ul{
+    font-size: 1.35rem;
+    padding: 0;
+}
+li.actif{
+    font-weight: 700;
+}
+/***en cour***/
+.encours{
+    font-size: 1.35rem;
+    font-weight: 100;
+}
+.encours .fleche{
+    margin-left: 1rem;
+    font-size: 1..35rem;
+    font-weight: 800; 
+}
+.encours.actif{
+    font-weight: 620;
+}
+
+/* MAIN */
+/*intro*/
+.txtintro{
+    margin-top: 2rem;}
+/*figure*/
+figure{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.imgfig img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+figcaption{
+    font-family: 'Courier New', Courier, monospace;
+    color: #959595;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    max-width: 48rem;
+}
+/*section*/
+.titre{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.secteur{
+    line-height: 1.5rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+.domaine::before{
+    content: "#";
+}
+.domaine{
+    line-height: 2rem;
+    font-weight: 200;
+    color: #959595;
+    font-size: 1.25rem;
+    margin-right: 2rem;
+}
+.opacity{
+    opacity: 0.3;
+}
+
+
+.bouton{
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgb(149, 149, 149, 0.2);
+    border-radius: 2rem;
+}
+/* FLECHE HAUT */
+/*
+.fixe{
+    bottom: 5rem;
+    position: fixed;
+    text-align: right;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 0.8rem;
+    margin-right: 5%;
+    border: 2px solid ;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+*/
+
+
+
+/* FOOTER*/
+/*footer::before {
+    content: ".........................................................................................................................";
+    font-size: 1rem;
+    font-family: monospace;
+    font-size: 1rem;
+    display: inline-block;
+    max-width: 960px;
+    overflow-x: hidden;
+    margin-top: 3rem;
+    margin-bottom: -1.5rem;
+}*/
+.footer{
+    margin-top: 5rem;
+    border-top: 0.5px solid rgb(149, 149, 149, 0.3);
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    height: 10rem;
+    padding-bottom: 1.5rem;
+}
+.footer .titre{
+    margin-top: 0rem;}
+/* gauche */
+
+
+/*droite */
+.puce {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.droite{
+    font-weight:300;
+    color: #959595;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.boutonmode{
+    padding: 0.1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.2rem;
+    border: solid 1px  rgb(149, 149, 149, 0.8); 
+    border-radius: 1rem;
+}
+
+
+/* // PAGE PROJET // */
+.grille{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -0.5rem;
+}
+.projet{
+    padding: 1.25rem;
+    max-width: 28rem;
+    margin-top: 2rem;
+
+}
+.img{
+    max-height: 20rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img img{
+    display: block;
+    width: 100%;
+    transition: opacity .15s ease-in-out;
+    margin:0;
+}
+.projet .titre{
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.projet p{
+    margin: 0;
+}
+.projet time{
+    font-family: 'Courier New', Courier, monospace;
+    color: #959595;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+
+/* // PAGE PROJET EN COURS // */
+.croix{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.projetsencours ul{
+    margin-top: 2rem;
+    padding-left: 2.25rem;
+    max-width: 48rem;
+    list-style-type: ">    ";
+}
+.projetsencours li{
+    margin-top: .75em;
+}
+#moment{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.light{
+    font-size: 1.25rem;
+    font-weight:300;
+}
+/* svg */
+.black{
+    stroke:var(--txt-color);
+    
+}
+.stroke-w{
+    stroke-width:14.1732;
+    stroke-miterlimit:10;
+    stroke-linecap:square;
+    fill:none;
+}
+.rec-w{
+    stroke-width:2.8346;
+    stroke-miterlimit:10;
+    fill:none;
+}
+
+
+
+/* // PAGE ARTICLE PROJET // */
+.topart{
+    padding-top: 0rem;
+}
+
+.titreart{
+    font-weight: 600;
+    text-align: center;
+}
+.soustitre{
+    max-width: 100%;
+    font-size: 2.5rem;
+    line-height: 0.8rem;
+    font-weight:200;
+    color:#959595 ;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    text-align: center
+}
+.overlay-art{
+    
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+    max-width: 48rem;
+}
+.overlay-art img{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-height: 100vh;
+    max-width: 50rem;
+}
+.image{
+    display: flex;
+    align-items: center;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.txtproj{
+    max-width: 40rem;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+
+}
+
+/*Slide*/
+.flechebt{
+    width: 2rem;
+    height: 2rem;
+}
+.slide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.visible{
+    display: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.visible img, .visible p{
+    max-width: 50rem;
+    max-height: 22rem;
+}
+.btslide{
+    padding-bottom: 0.4rem;
+}
+.marqueur{
+    color: #959595;
+    margin-top: 1rem;
+    text-align: center;
+}
+.js{
+    flex-direction: row;
+}
+
+.txtarticle{
+    font-family: 'Courier New', Courier, monospace;
+    color: #959595;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+
+.citation{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight:200;
+    color:#959595 ;
+}

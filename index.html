@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timothé Jeanne - Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <script src="script.js" defer>
+      
+  </script>
+
+
+  <body onload="Mode()">
+    <header>
+        <div class="container">
+            
+            <h3 >Bonjour <a href="#" ><span class="signea">!</span></a></h3>
+            </a>
+            <h1>Timothé Jeanne</h1>
+            <h2 class="lignebas">designer multiple </h2>
+        </div>
+        <nav class="ligne">
+            <div>
+            <ul>
+                <li class="actif">
+                    <a href="#">Accueil</a>
+                </li>
+                <li>
+                    <a href="#apropos">&#xC0; propos</a>
+                </li>
+                <li>
+                    <a href="projets.html">Projets</a>
+                </li>
+            </ul>
+            </div>
+            <div>
+                <a href="encours.html">
+                    <p class="encours">Travaux en cours<span class="fleche">></span></p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <p class="txtintro">Je suis un designer graphique, un créateur pluriel mais surtout un humain curieux.
+        <br> 
+        Actuellement à Strasbourg, je suis toujours à la recherche de nouveaux lieux de vie et en 
+        quête d’horizons inconnus.
+        </p>
+    
+    <figure>
+        <div class="imgfig">
+        <div class="overlay">
+            <img src="image/calque.jpg" alt="animation 2d sur calque"  >
+        </div>
+        </div>
+        <figcaption>
+            Photo prise lors d'un projet d'animation 2D en février 2020.
+        </figcaption>
+    </figure>
+    
+    <mark id="apropos"></mark>
+    <section>
+        <h2 class="titre">&#xC0; propos de moi</h2>
+        <p>Après deux ans de classe préparatoire aux grandes écoles d’art et de design à Lyon, je suis aujourd'hui étudiant au
+            <a class="lienp" target="_blank" href="https://www.lyceelecorbusier.eu/dsaa/?cat=68" title="Insitu lab">Dsaa In situ lab de Strasbourg.</a>
+            <br>
+            <br>
+            J’aime construire et bricoler à plusieurs. Je crée des projets variés ancrés sur un 
+            terrain et ses habitants. 
+            <br>
+            Mes projets sont souvent créateurs de moments de rencontres et de partage. L'occasion de découvrir 
+            de nouveaux savoir-faire et d'apprendre des expériences de vie toujours enrichissantes de chacun.
+            Passionné par la transmission de ces apprentissages, je tente de trouver les formes (graphiques, outils, films…) 
+            qui créent les liens entre des écosystèmes complexes. 
+            <br>
+            <br>
+            Je souhaite utiliser mes compétences pour aider des personnes, des organisations ou des initiatives qui imaginent 
+            des possibles de vivre-ensemble alternatif et qui explorent le partage de nouveaux communs.
+            </p>
+    </section>
+    
+    <section class="apropos">
+        <h2 class="titre">Ce que je fais</h2>
+        <p>Je touche à de nombreux domaines différents :</p>
+        <span class="secteur active bouton" onclick="Apparition('code')">Code Web</span>
+        <span class="code opacity">
+        <span class="domaine ">Html/Css</span>
+        <span class="domaine ">Javascript</span>
+        <span class="domaine ">Dart</span>
+        <span class="domaine ">Java</span>
+        </span>
+        <br>
+        <br>
+        <span class="secteur active bouton" onclick="Apparition('animation')">Animation</span>
+        <span class="animation opacity">
+        <span class="domaine ">Papier&#8239;(2d)</span>
+        <span class="domaine ">Stop-Motion</span>
+        <span class="domaine ">Animate</span>
+        <span class="domaine ">3DS&#8239;Max</span>
+        </span>
+        <br>
+        <br>
+        <span class="secteur active bouton" onclick="Apparition('illus')">Illustration</span>
+        <span class="illus opacity">
+        <span class="domaine ">Illustrator</span>
+        <span class="domaine ">Photoshop</span>
+        <span class="domaine ">Dessin</span>
+        </span>
+        <br>
+        <br>
+        <span class="secteur active bouton" onclick="Apparition('cons')">Construction</span>
+        <span class="cons opacity">
+        <span class="domaine ">Bricolage</span>
+        <span class="domaine ">Prototypage</span>
+        </span>
+        <br>
+        <br>
+        <span class="secteur active bouton" onclick="Apparition('video')">Vidéo</span>
+        <span class="video opacity">
+        <span class="domaine ">Storyboard</span>
+        <span class="domaine ">Montage</span>
+        <span class="domaine ">Premiere&#8239;pro</span>
+        <span class="domaine ">After&#8239;effect</span>
+        </span>
+        <br>
+        <br>
+        <span class="secteur active bouton" onclick="Apparition('other')">Autres</span>
+        <span class="other opacity">
+        <span class="domaine ">Ski</span>
+        <span class="domaine ">Escalade</span>
+        <span class="domaine ">Cuisine</span>
+        </span>
+    </section>
+
+    <section class="apropos">
+        <h2 class="titre">Contact</h2>
+        <p>
+            Timothé Jeanne
+            <br>
+            <span class="mail">timothe.jeanne.pro@outlook.fr</span>
+        </p>
+    </section>
+
+    <!--<div class="fixe">
+        <a href="#" ><span class="signe top"><</span></a>
+    </div>-->
+
+    <footer>
+        <div class="footer">
+            <div class="gauche">
+                <h5 >Crédit</h5>
+                <p>
+                Fait par Timothé Jeanne
+                <br>
+                Typographie : Segoe, Prestige
+                </p>
+            </div>
+         
+
+            <div class="droite">
+                <p>
+                <span class="boutonmode active" onclick="ModeSombre()"> <span id="mode">Mode sombre</span><span id="puce" class="puce " >&#x25EF;</span></span></p>
+            </div>
+        </div> 
+    </footer>
+  </body>
