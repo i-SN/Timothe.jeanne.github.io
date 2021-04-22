@@ -6,6 +6,7 @@ html {
     --bck-color:white;
     color: var(--txt-color);
     background-color: var(--bck-color);
+    width: 100%;
 }
 a {
     color: inherit;
